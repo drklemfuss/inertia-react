@@ -1,0 +1,60 @@
+#################################################################################################################
+# Dev Dockerfile:
+#   - OPTIONAL: Development can be done locally without a dockerfile, if desired. This image contains dev tools 
+#     and dependencies for local development.
+#
+#   - Supports hot module reloading (with tools like Vite and React's fast refresh).
+#   - Includes dev dependencies like compilers, testing tools, and databases for local development.
+#   - Exposes ports for local development (localhost:3000, etc.) and bind volumes for code changes.
+#################################################################################################################
+
+# Use the official PHP image as a base image
+FROM php:8.3-fpm
+
+# Set working directory
+WORKDIR /var/www
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    locales \
+    zip \
+    jpegoptim optipng pngquant gifsicle \
+    vim \
+    unzip \
+    git \
+    curl \
+    libzip-dev \
+    libpq-dev \
+    libonig-dev \
+    libicu-dev \  
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql mbstring zip exif pcntl
+
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Copy the existing application directory contents to the working directory
+COPY . /var/www
+
+# Ensure Laravel directories are writable
+RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+
+# Change current user to www-data
+USER www-data
+
+# Expose port 9000 and start php-fpm server
+EXPOSE 9000
+CMD ["php-fpm"]

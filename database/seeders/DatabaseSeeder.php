@@ -17,25 +17,53 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        /**
+         * ***************************************
+         * Seed Static Data Tables
+         * ***************************************
+         */
+        $this->call(CountrySeeder::class);
 
+
+        /**
+         * ***************************************
+         * Seed Dynamic Data Tables
+         * ***************************************
+         */
+        $this->call(TaskSeeder::class);
+
+
+        /** 
+         * ***************************************
+         * Seed Roles, Permissions, and Users
+         * ***************************************
+         */ 
 
         //Reset cached roles and permissions
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
         // Create Permissions
+        // 1. Task Model:
         Permission::create(['name' => 'edit-task']);
         Permission::create(['name' => 'delete-task']);
         Permission::create(['name' => 'view-task']);
         Permission::create(['name' => 'view-any-task']);
         Permission::create(['name' => 'create-task']);
+        // 2. Country Model (View-Only):
+        Permission::create(['name' => 'view-country']);
+        Permission::create(['name' => 'view-any-country']);
 
         // Create Roles
         $admin = Role::create(['name' => 'admin']);
         $user = Role::create(['name' => 'user']);
 
         // Assign Permissions to Roles
-        $admin->givePermissionTo(['edit-task', 'delete-task', 'view-task','view-any-task', 'create-task']);
-        $user->givePermissionTo(['view-task', 'create-task', 'edit-task','delete-task']);
+        $admin->givePermissionTo([
+            'edit-task', 'delete-task', 'view-task','view-any-task', 'create-task',
+            'view-country', 'view-any-country']);
+        $user->givePermissionTo([
+            'view-task', 'create-task', 'edit-task','delete-task',
+             'view-country', 'view-any-country']);
 
         // User::factory(10)->create();
 

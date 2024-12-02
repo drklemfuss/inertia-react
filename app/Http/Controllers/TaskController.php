@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Task;
 use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;  // <-- Add this line
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests; 
 
 
 class TaskController extends Controller
