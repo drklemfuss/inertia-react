@@ -1,9 +1,10 @@
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import { Head } from '@inertiajs/react';
+import DashboardLayout from "@/layouts/DashboardLayout";
+import { Head, Link } from "@inertiajs/react"; // Import Link for routing
+import { Button } from "@/components/ui/button"; // Assuming you have a button component for styling
 
 export default function Dashboard() {
     return (
-        <AuthenticatedLayout
+        <DashboardLayout
             header={
                 <h2 className="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
                     Dashboard
@@ -16,11 +17,20 @@ export default function Dashboard() {
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800">
                         <div className="p-6 text-gray-900 dark:text-gray-100">
-                            You're logged in!
+                            <p>You're logged in!</p>
+
+                            {/* Link to Tasks Index */}
+                            <div className="mt-4">
+                                <Link href={route("tasks.index")}>
+                                    <Button variant="default">
+                                        View Tasks
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </AuthenticatedLayout>
+        </DashboardLayout>
     );
 }
