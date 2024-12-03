@@ -52,8 +52,10 @@ Key features include:
 
 ### Built With
 
--   [![React][React.js]][React-url]
 -   [![Laravel][Laravel.com]][Laravel-url]
+-   [![Filament][FilamentPHP.com]][Filament-url]
+-   [![InertiaJS][InertiaJS.com]][Inertia-url]
+-   [![React][React.js]][React-url]
 -   [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
 
 ## Getting Started
@@ -107,7 +109,7 @@ This project serves as a starter kit for developing Laravel applications with mo
 ## Roadmap
 
 -   [ ] Add support for notifications and queuing via Laravel Echo.
--   [ ] Integrate Supervisord for process management in Docker.
+-   [ ] Integrate Supervisord for process management in Docker (Queues/Reverb server for websocket connections).
 -   [ ] Upgrade to React 19 upon stable release.
 -   [ ] Extend dashboard functionality with generic features.
 -   [ ] Add SAAS-related functionality in separate branches.
@@ -131,3 +133,24 @@ Distributed under the MIT License.
 -   Special thanks to Leo Mirando for UI inspirations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Inertia-url]: https://inertiajs.com
+[Filament-url]: https://filamentphp.com
