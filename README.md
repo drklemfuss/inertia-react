@@ -1,66 +1,133 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<a id="readme-top"></a>
 
-## About Laravel
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<br />
+<div align="center">
+  <a href="https://github.com/drklemfuss/inertia-react">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h3 align="center">Laravel 11 Starter with Inertia.js and React</h3>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  <p align="center">
+    A starter project for Laravel 11, Inertia.js, and React 18 with modern UI and Docker support.
+    <br />
+    <a href="https://github.com/drklemfuss/inertia-react"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/drklemfuss/inertia-react">View Demo</a>
+    ·
+    <a href="https://github.com/drklemfuss/inertia-react/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/drklemfuss/inertia-react/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
-## Learning Laravel
+## About The Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project is a starter for developing applications with Laravel 11, Inertia.js, and React 18, styled using ShadCN. It provides a modern development experience using Docker, which includes a pre-configured development environment.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Key features include:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Authentication:** Built-in user authentication via Laravel Breeze, including login, register, password reset, and email verification pages styled with ShadCN.
+-   **UI/Styling:** Landing pages designed with ShadCN (inspired by Leo Mirando’s work). Custom authentication pages for login, register, and password reset.
+-   **Models & Examples:**
+    -   Example models to demonstrate Laravel Eloquent ORM, such as `Tasks` (associated with users) and `Countries` (static data).
+    -   Example controllers, policies, and routes to illustrate various use cases.
+-   **Role-Based Access Control:** Using Spatie Laravel-Permissions for roles and permissions, with predefined `admin` and `user` roles.
+-   **Admin Panel:** Integrated with Filament v3 to manage resources with CRUD views, log viewing plugins, and permission management interfaces.
+-   **Dockerized Setup:** Docker Compose environment includes:
+    -   Nginx web server with development configuration for HTTP.
+    -   Adminer for lightweight database management.
+    -   PostgreSQL 15 (modifiable via `.env` and compose file).
 
-## Laravel Sponsors
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Built With
 
-### Premium Partners
+-   [![React][React.js]][React-url]
+-   [![Laravel][Laravel.com]][Laravel-url]
+-   [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Getting Started
+
+### Prerequisites
+
+-   Clone the repository
+-   Copy the example `.env` file and modify it as needed (especially database configurations).
+-   Run `php artisan key:generate` to create an application key.
+
+### Installation
+
+#### Running Locally
+
+1. Install PHP 8.3 and Composer.
+    ```sh
+    composer install
+    ```
+2. Start Laravel’s development server.
+    ```sh
+    php artisan serve
+    ```
+3. Install Node.js 20+ and PNPM.
+    ```sh
+    pnpm install
+    pnpm dev
+    ```
+
+#### Using Docker Compose
+
+1. Install Docker and Docker Compose.
+2. Build and start the containers.
+    ```sh
+    docker compose -f docker-compose.dev.yml up --build
+    ```
+3. Migrate and seed the database.
+    ```sh
+    docker exec -it dev-app1 bash
+    php artisan migrate:fresh --seed
+    ```
+4. Access the site on `http://localhost:8088` (port configurable in the compose file).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+This project serves as a starter kit for developing Laravel applications with modern UI and authentication. It’s pre-configured for local development using Vite and Docker.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Roadmap
+
+-   [ ] Add support for notifications and queuing via Laravel Echo.
+-   [ ] Integrate Supervisord for process management in Docker.
+-   [ ] Upgrade to React 19 upon stable release.
+-   [ ] Extend dashboard functionality with generic features.
+-   [ ] Add SAAS-related functionality in separate branches.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Contributions are welcome! Fork the project and create a pull request.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Distributed under the MIT License.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgments
+
+-   Special thanks to Leo Mirando for UI inspirations.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
