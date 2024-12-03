@@ -137,16 +137,16 @@ Distributed under the MIT License.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/drklemfuss/inerita-react.svg?style=for-the-badge
+[contributors-url]: https://github.com/drklemfuss/inerita-react/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/drklemfuss/inerita-react.svg?style=for-the-badge
+[forks-url]: https://github.com/drklemfuss/inerita-react/network/members
+[stars-shield]: https://img.shields.io/github/stars/drklemfuss/inerita-react.svg?style=for-the-badge
+[stars-url]: https://github.com/drklemfuss/inerita-react/stargazers
+[issues-shield]: https://img.shields.io/github/issues/drklemfuss/inerita-react.svg?style=for-the-badge
+[issues-url]: https://github.com/drklemfuss/inerita-react/issues
+[license-shield]: https://img.shields.io/github/license/drklemfuss/inerita-react.svg?style=for-the-badge
+[license-url]: https://github.com/drklemfuss/inerita-react/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
