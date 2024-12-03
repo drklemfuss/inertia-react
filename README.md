@@ -2,11 +2,13 @@
 
 <a id="readme-top"></a>
 
+<!--
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+-->
 
 <br />
 <div align="center">
@@ -137,6 +139,7 @@ Distributed under the MIT License.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
+<!--
 [contributors-shield]: https://img.shields.io/github/contributors/drklemfuss/inerita-react.svg?style=for-the-badge
 [contributors-url]: https://github.com/drklemfuss/inerita-react/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/drklemfuss/inerita-react.svg?style=for-the-badge
@@ -149,6 +152,8 @@ Distributed under the MIT License.
 [license-url]: https://github.com/drklemfuss/inerita-react/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+-->
+
 [React-url]: https://reactjs.org/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
 [Laravel-url]: https://laravel.com
